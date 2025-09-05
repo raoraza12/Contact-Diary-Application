@@ -1,0 +1,176 @@
+                            /* Reset */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #20c997, #0dcaf0); /* teal-aqua theme */
+  padding: 40px;
+}
+
+
+                          /* Dashboard Card */
+
+
+.dashboardPage {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 600px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.dashboardPage h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+  text-align: center;
+}
+
+
+                             /* Logout button */
+
+
+.logoutButton {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logoutButton:hover {
+  background: #b02a37;
+}
+
+
+                                /* Contact Form */
+
+
+.form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.form h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: left;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.form input:focus {
+  border-color: #20c997;
+  box-shadow: 0 0 6px rgba(32,201,151,0.3);
+  outline: none;
+}
+
+
+                               /* Add Button */
+
+
+.addButton {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #20c997, #0dcaf0);
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.addButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(13,202,240,0.4);
+}
+
+
+                        /* Contacts List */
+
+
+#contact-list {
+  margin-top: 20px;
+}
+
+.contact-item {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  list-style-type : none;
+
+}
+
+.contact-item strong {
+  font-size: 16px;
+  color: #222;
+}
+
+.contact-item button {
+  margin-top: 8px;
+  margin-right: 5px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-item button:nth-child(1) {
+  background: #ffc107;
+  color: #000;
+}
+
+.contact-item button:nth-child(1):hover {
+  background: #e0a800;
+}
+
+.contact-item button:nth-child(2) {
+  background: #dc3545;
+  color: #fff;
+}
+
+.contact-item button:nth-child(2):hover {
+  background: #b02a37;
+}
+
+
+                            /* Animation */
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
