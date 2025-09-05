@@ -12,7 +12,7 @@ function loginUser() {
       console.log("Login successful:", curUser); 
       localStorage.setItem("currentUser", curUser.email);
   } else {
-    console.log("No user data found");
+    alert("No user data found");
   }
   window.location = "./Dashboard/dashboard.html";
 }

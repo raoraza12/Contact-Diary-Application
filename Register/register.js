@@ -9,7 +9,10 @@ function registerUser() {
     email : email.value,
     password : password.value
 }
-
+if (userData.fullName === "" || userData.email === "" || userData.password === "") {
+  alert("Please fill all the fields");
+  return;
+}
   let users = JSON.parse(localStorage.getItem("userData")) || [] ;
   users.push(userData) 
   localStorage.setItem("userData", JSON.stringify(users))
